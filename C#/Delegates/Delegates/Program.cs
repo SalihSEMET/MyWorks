@@ -5,7 +5,7 @@ namespace Delegates
     delegate int MathDelegate(int number1, int number2);
     delegate void LoggerDelegate(string message);
     delegate bool numbercontrolDelegate(int number);
-    class Program()
+    class Program
     {
         
         static void Main()
