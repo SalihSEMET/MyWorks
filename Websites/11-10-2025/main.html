@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS(Cascading Style Sheets)</title>
+    <style>
+        /*
+        Bu Alana Bu Sayfayı Etkileyebilicek Css Kodları Yazabiliriz
+
+        Css Slecter(Seçiciler)
+        Internal veya External css Yazım Yöntemi Kullanılırken yazılan css Komutlarının Sayfa İçerisindeki hangi element veye elementlere etki Etmesi gerektiğini Tanımladıgımız bİr Css Özelliğidir.
+
+         Element Seçiciler: Direk Elementin Adını Yazarak Kullanabiliriz.
+
+
+        Internal(Dahili) Css Tanımlama Yöntemi
+        Bu Alana Sadece Bu Sayfayı Etkileyebilicek Css Kodları Yazabiliriz
+        */
+        a{
+            color: tomato;
+        }
+        h1
+        {
+          background-image: url("https://cdn.jsdelivr.net/npm/bootstrap@3.0.0/bootstrap.min.css");
+            height: 500px;
+            /*
+            Box Shadow: Kutu Gölgesi,Elementlerin Dışındaki çevreye gölge Efekti Uygular.
+             */
+            box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.8);
+        }
+        p{
+            color: springgreen;
+            /*
+             text Shadow : Yazı Gölgesi,Yazı elementlerinin dışına gölge efekti uygular.
+            */
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Sayfaların Görünümünü Özelleştirebildiğimiz bir nevi sayfayı makyajlayabildiğimiz HTML dili içerisindeki alt bir Özelliktir
+Renk Arkaplan Boyutları Sayfa Konumu vs gibi Görünen Seyleri Değiştirebiliriz
+-->
+
+<!-- CSS Yazabildiğimiz Noktalar -->
+<!----------------------------------------------->
+<!-- İnline(Satır İçi) : Elementin Bulundugu Alana Direk Elementi Etkileyebilicek Direl Eleman İçerisindeki "style" attribute içerisinde csslerimizi yazabiliriz -->
+<!-- İnternal(Dahili) : Sayfa HTML Dokumanı İçerisindeki Head Etiketi İçerisine bir Style Etiketi Oluşturup Sadece O Sayfayı Etkiliyecek Css Tanımları Yapabiliriz -->
+<!-- External(Harici) : Harici bir .css uzantılı dosya oluşturup içerisine css kodlarımızı yazıp bir/birden fazla sayfa içerisindeki içerisine ekleyip css kodlarımızı o sayfada Kullanabiliriz-->
+<!-- Önce İnline -->
+<!-- Css İçerisindeki Ölçü Birimlerinden Genel Olarak piksel Ölçü Birimi Kullanılmaktadır -->
+<h1 style="color:chocolate; font-family: cursive; background-color: black; border: 5px solid red;  ">
+    Başlık
+</h1>
+<br * 3>
+<h1>
+    Css siz Başlık
+</h1>
+<br>
+<button style="background-color: green; border-radius: 50px">
+    Buton
+</button>
+<button>
+    Css siz Buton
+</button>
+<br>
+<a href="https://google.com">
+    Google a Gider
+</a>
+<br>
+<a href="https://Instagram.com">
+    Instagram a Gider
+</a>
+<br>
+<a href="https://X.com">
+    X e Gider
+</a>
+<br>
+<p>
+
+</p>
+</body>
+</html>

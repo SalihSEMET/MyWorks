@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- Yatay Olarak Sayfa Boyunca Düz Bir Çizgi Çeker -->
+<hr>
+<!-- Metni Kalın Yazma -->
+<b>Kalın Yazı</b>
+<!-- Metni Eğik Yazdırma -->
+<i>Eğik Yazı</i>
+<!-- Buton Ekleme -->
+<button>Tıkla Bana</button>
+<!-- Üzerini Çizme -->
+<s>Üzerini Çizer</s>
+<!-- Altını Çizme -->
+<u>Altını Çizer</u>
+<!-- Ordered List(Sıralı Liste) -->
+<ol type="I">
+    <li>Matamatik</li>
+    <li>Fizik</li>
+    <li>Kimya</li>
+    <li>Biyoloji</li>
+</ol>
+
+<br * 5>
+<!-- Unordered List(Sırasız List) -->
+<ul style="list-style-type: circle;">
+    <li>Ankara</li>
+    <li>İstanbul</li>
+    <li>İzmir</li>
+</ul>
+<!-- Vurgu yapar  -->
+<mark>
+    Sarı Renkle Üzerini Çizer
+</mark>
+<!-- Seçim Yaptırma -->
+<select>
+    <option>
+        Lütfen Seçim Yapınız
+    </option>
+    <option>
+        Ev Yaşam
+    </option>
+    <option>
+        Çocuk
+    </option>
+    <option>
+        Bahçe ve Dekarasyon
+    </option>
+</select>
+<!-- Gruplu Seçim Yaptırma -->
+<select>
+    <option selected disabled >
+        Lütfen Seçim Yapınız
+    </option>
+    <optgroup label="Sayısal Dersler">
+        <option>
+            Matamatik
+        </option>
+        <option>
+            Fizik
+        </option>
+        <option>
+            Kimya
+        </option><option>
+        Biyoloji
+    </option>
+    </optgroup>
+
+    <optgroup label="Sözel Dersler">
+        <option>
+            Cografya
+        </option><option>
+            Edebiyat
+        </option><option>
+            Tarih
+        </option>
+    </optgroup>
+</select>
+<!-- Multiple Çoklu Seçim Yapılabilen Hali -->
+<select multiple>
+    <option selected disabled >
+        Lütfen Seçim Yapınız
+    </option>
+    <optgroup label="Sayısal Dersler">
+        <option>
+            Matamatik
+        </option>
+        <option>
+            Fizik
+        </option>
+        <option>
+            Kimya
+        </option><option>
+        Biyoloji
+    </option>
+    </optgroup>
+
+    <optgroup label="Sözel Dersler">
+        <option>
+            Cografya
+        </option><option>
+        Edebiyat
+    </option><option>
+        Tarih
+    </option>
+    </optgroup>
+</select>
+
+
+<br * 5>
+<!-- Sayfayı Ortalar -->
+<center> <h2>Ortada Başlık</h2> </center>
+
+<iframe src = "https://www.spext.fun/" width="800" height="1200"></iframe>
+
+<!-- İnputlar -->
+<input> <!-- Varsayılan Olan type = text tir-->
+<input type = "button" value="">
+<br>
+<input type = "button">
+<br>
+<input type = "checkbox">
+<br>
+<input type = "date">
+<br>
+<input type = "datetime">
+<br>
+<input type = "email">
+<br>
+<input type = "file" multiple>
+<br>
+<input type = "hidden"> <!-- İçerisinde Veriyi Saklar -->
+<br>
+<input type = "image">
+<br>
+<input type="month">
+<br>
+<input type="number">
+<br>
+<input type="password">
+<br>
+<label>Erkek</label>
+<input name = "cinsiyet" type = "radio">
+<br>
+<label>Kadın</label>
+<input name = "cinsiyet" type = "radio">
+<br>
+<label>Belirtmek İstemiyorum</label>
+<input name = "cinsiyet" type = "radio">
+<br * 5>
+
+<input type = "range">
+<br>
+<input type = "reset">
+<br>
+<input type = "search">
+<br>
+<input type = "submit">
+<br>
+<input type = "tel">
+<br>
+<input type = "url">
+<br>
+<input type = "time">
+<br>
+<input type = "week">
+<br>
+<input type = "color">
+<br>
+<br * 5>
+<!-- Form Etiketi -->
+<form action="index.html">
+    <input name = "Ad Soyad" placeholder="Ad Soyad" type = "text">
+    <br>
+    <input name = "Yaş" type = "number" placeholder="Yaş">
+    <br>
+    <label>Şehir</label>
+    <select>
+        <option selected disabled>Lütfen Seçim Yapınız</option>
+        <option>Anakara</option>
+        <option>İzmir</option>
+        <option>İstanbul</option>
+    </select>
+    <br>
+    <input required type = "email" placeholder="E-mail">
+    <br>
+    <input required type = "tel">
+    <br>
+    <input required type = "submit">
+    <input required type = "reset">
+</form>
+
+<br * 5 >
+<!-- Table Etiketi Tablo Oluşturmak İçin Kullanılır
+tr(Table Row) : Yeni Bir Satır Oluşturmak İçin Kullanılır
+tf(Table Data) : Yeni Bir Hücre Oluşturmak İçin Kullanılır
+
+
+-->
+<table border="3">
+    <caption>Yıllık Satış Adedi</caption>
+    <thead>
+    <tr>
+        <th>
+            Ürün
+        </th>
+        <th>
+            Ocak
+        </th>
+        <th>
+            Şubat
+        </th>
+        <th>
+            Toplam
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            Kalem
+        </td>
+        <td>
+            120
+        </td>
+        <td>
+            100
+        </td>
+        <td>
+            220
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Defter
+        </td>
+        <td>
+            80
+        </td>
+        <td>
+            90
+        </td>
+        <td>
+            170
+        </td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="3">Genel Toplam</td>
+        <td>390</td>
+    </tr>
+    </tfoot>
+</table>
+<br * 10>
+
+<table border = "1" cellpadding="8" cellspacing="0">
+    <caption>Ögrenci Ders Notları</caption>
+    <thead>
+    <tr>
+        <th>Ad Soyad</th>
+        <th>Ders</th>
+        <th>Vize</th>
+        <th>Final</th>
+        <th>Ortalama</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="2">Ahmet Yılmaz</td>
+        <td>Matamatik</td>
+        <td>80</td>
+        <td>90</td>
+        <td>85</td>
+    </tr>
+    <tr>
+        <td>Fizik</td>
+        <td>70</td>
+        <td>75</td>
+        <td>72.5</td>
+    </tr>
+     <tr>
+         <td rowspan="2">Salih Semet</td>
+         <td>Matamatik</td>
+         <td>100</td>
+         <td>100</td>
+         <td>100</td>
+     </tr>
+    <tr>
+        <td>Fizik</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="4">
+            Genel Ortalama
+        </td>
+        <td>
+            99
+        </td>
+    </tr>
+    </tfoot>
+</table>
+<br * 5 >
+<textarea rows="6" cols="50">
+
+</textarea>
+
+</body>
+</html>
