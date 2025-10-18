@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body id="bdy">
+<button onclick= Konsol()>Konsola Yaz</button>
+<button onclick=Operatorler()>Operatörler</button>
+
+<p id = "paragraf"></p>
+
+<button onclick="">Metni Değiştir</button>
+
+<button onclick="ColorChange()">Change Colour</button>
+
+
+
+
+<script src = "index.js"></script>
+<script>
+    function Konsol(){
+        //console.log("Konsol");
+        console.log(Name);
+    }
+    // Operatörler
+    function Operatorler(){
+        let number1 = 10;
+        let number2 = 20;
+        console.log("1.Sayı:" + number1);
+        console.log("2.Sayı:" + number2);
+        console.log("Toplama:" + number1 + number2);
+        console.log("Çıkarma:" + number1 - number2);
+        console.log("Çarpma:" + number1 * number2);
+        console.log("Bölme:" + number1 / number2);
+        console.log("Mod Alma:" + number1 % number2);
+        console.log("Deger Kontrolü:" + number1 == number2); // Sadece Degeri Kontrol Eder
+        console.log("Deger Ve Tip Kontrolü:" + number1 === number2); // Hem Tipi Hem Verinin Aynı Olması Gerekir
+        console.log("1.Sayı >5 ve ikici sayı <5 Kontrolü:" + number1 >5 && number2 < 5);
+    }
+    //Dom(Document Object Model) : Döküman İçerisindeki
+    document.getElementById('paragraf').innerText = "Bu Bir Paragraf";
+    let paragrafelementi = document.getElementById('paragraf');
+    paragrafelementi.innerText = "Bu Bir Paragraf";
+function ColorChange(){
+    let body = document.getElementById('bdy');
+    let r = Math.random() * 255;
+    let g = Math.random() * 255;
+    let b = Math.random() * 255;
+    body.style.backgroundColor = 'rgb('+r+','+g+','+b+')';
+
+}
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="arttır()">Arttır</button>
+<button onclick="">Azalt</button>
+<input type = "number" id = "deger" value="0">
+
+</body>
+
+<script>
+    function arttır(){
+      let number = document.getElementById("deger");
+        number++;
+        console.log("Yeni Deger:" +number);
+        number.value = Number(number);
+    }
+    function azalt(){
+      let number = document.getElementById("deger");
+        number--;
+        console.log("Yeni Deger:" +number);
+    }
+
+
+</script>
+</html>
