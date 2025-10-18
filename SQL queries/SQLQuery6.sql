@@ -83,6 +83,7 @@ ReorderLevel,
 Discontinued
 from Products
 
+
 select
 OrderID,
 (select ProductName from Products where ProductID = [Order Details].ProductID),
@@ -90,4 +91,16 @@ UnitPrice,
 Quantity,
 Discount
 from [Order Details]
+group by OrderID,ProductID,UnitPrice,Quantity,Discount
+
+select
+OrderID,
+UnitPrice,
+Quantity,
+Discount
+from [Order Details]
+group by OrderID,UnitPrice,Quantity,Discount
+
+
+
 
