@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #frm > div > input{
+            margin: 15px;
+            display: block;
+        }
+        .aktif{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<form id="frm">
+    <div>
+        <input type="text" placeholder="isim">
+        <input type="text" placeholder="Soyisim">
+
+    </div>
+    <div>
+        <input type="tel" placeholder="TEL: (555) *** ** **">
+        <input type="email" placeholder="mail@mail.com">
+    </div>
+
+    <div>
+        <button onclick="Tıkla">Gönder</button>
+    </div>
+
+</form>
+<style>
+    body{
+        background-color: lightgray;
+        font-family: Arial;
+        text-align: center;
+        margin-top: 80px;
+
+    }
+    #toggleBtn.on{
+        background-color: green;
+        color: white;
+    }
+    #motor{
+        width: 50px;
+        height: 50px;
+        background: blue;
+        border-radius: 8px;
+        margin: 60px auto;
+        position: relative;
+    }
+    #status{
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+</style>
+
+<button id = 'btn'>Açık Kapalı</button>
+
+<h2>Otomasyon Similasyonu</h2>
+
+<button id = "toggleBtn"></button>
+<button id = motor></button>
+<button id = status></button>
+
+<script !src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+<script>
+    const { animate } = anime;
+</script>
+
+<script>
+    function Tıkla(){
+        debugger
+        let html = $('#frm').html();
+    }
+
+    $('#btn').click(function (){
+        $(this).toggleClass('aktif');
+        if($(this).hasClass('aktif'))
+            $(this).text('Açık');
+        else
+            $(this).text('Kapalı');
+
+    })
+</script>
+
+<script >
+    $(document.ready(function(){
+        let isOn = false;
+        let animation = null;
+
+        $('toggleBtn').click(function(){
+            isOn = !isOn;
+
+            if(isOn){
+                this.addClass('on').text("Açık");
+                $('status').text('Durum Çalışıyor');
+
+                animation = animate{
+                    targets : 'motor',
+                    translateX : [0 ,300],
+                        direction : 'alternative',
+                        loop : true,
+
+
+                }
+
+
+            }
+        })
+    }))
+</script>
+
+</body>
+</html>
